@@ -1,0 +1,197 @@
+{
+  "brand": "Atelier",
+  "admins": [
+    {
+      "id": "admin-1",
+      "name": "Полина",
+      "phone": "067452521",
+      "role": "admin"
+    }
+  ],
+  "masters": [
+    {
+      "id": "m1",
+      "name": "Владимир",
+      "phone": "079254512",
+      "percent": 0.5
+    },
+    {
+      "id": "m2",
+      "name": "Vasilii",
+      "phone": "079850212",
+      "percent": 0.45
+    },
+    {
+      "id": "m3",
+      "name": "Сережа",
+      "phone": "079875459",
+      "percent": 0.4
+    },
+    {
+      "id": "m4",
+      "name": "Татьяна",
+      "phone": "068631031",
+      "percent": 0.45
+    },
+    {
+      "id": "m5",
+      "name": "Виктория",
+      "phone": "076029931",
+      "percent": 0.45
+    },
+    {
+      "id": "m6",
+      "name": "Даша",
+      "phone": "078668628",
+      "percent": 0.4
+    },
+    {
+      "id": "m7",
+      "name": "Катя",
+      "phone": "060687539",
+      "percent": 0.4
+    }
+  ],
+  "services": [
+    {
+      "code": "clean_shoes_basic",
+      "name": "Чистка обуви (обычная)",
+      "category": "Обувь • Чистка",
+      "price": 200
+    },
+    {
+      "code": "clean_shoes_deep",
+      "name": "Чистка обуви (глубокая)",
+      "category": "Обувь • Чистка",
+      "price": 300
+    },
+    {
+      "code": "odor_removal",
+      "name": "Дезодорация/удаление запаха",
+      "category": "Обувь • Уход",
+      "price": 150
+    },
+    {
+      "code": "steam_refresh",
+      "name": "Паровая обработка/освежение",
+      "category": "Обувь • Уход",
+      "price": 120
+    },
+    {
+      "code": "whitening_soles",
+      "name": "Отбеливание подошвы",
+      "category": "Обувь • Уход",
+      "price": 180
+    },
+    {
+      "code": "glue_sole",
+      "name": "Проклейка подошвы",
+      "category": "Обувь • Ремонт",
+      "price": 220
+    },
+    {
+      "code": "heel_replace",
+      "name": "Замена набойки/каблука",
+      "category": "Обувь • Ремонт",
+      "price": 250
+    },
+    {
+      "code": "stitch_repair",
+      "name": "Ремонт шва (за 1 см)",
+      "category": "Обувь • Ремонт",
+      "price": 30
+    },
+    {
+      "code": "zipper_replace_boot",
+      "name": "Замена молнии (сапоги)",
+      "category": "Обувь • Ремонт",
+      "price": 600
+    },
+    {
+      "code": "paint_shoes_partial",
+      "name": "Покраска обуви (частичная)",
+      "category": "Обувь • Покраска",
+      "price": 350
+    },
+    {
+      "code": "paint_shoes_full",
+      "name": "Покраска обуви (полная)",
+      "category": "Обувь • Покраска",
+      "price": 500
+    },
+    {
+      "code": "clean_bag_out",
+      "name": "Чистка сумки (внешняя)",
+      "category": "Сумки • Чистка",
+      "price": 400
+    },
+    {
+      "code": "clean_bag_inout",
+      "name": "Чистка сумки (внутри+снаружи)",
+      "category": "Сумки • Чистка",
+      "price": 550
+    },
+    {
+      "code": "paint_bag_partial",
+      "name": "Покраска сумки (частичная)",
+      "category": "Сумки • Покраска",
+      "price": 600
+    },
+    {
+      "code": "paint_bag_full",
+      "name": "Покраска сумки (полная)",
+      "category": "Сумки • Покраска",
+      "price": 900
+    },
+    {
+      "code": "handle_repair",
+      "name": "Ремонт/усиление ручек",
+      "category": "Сумки • Ремонт",
+      "price": 350
+    },
+    {
+      "code": "zipper_replace_bag",
+      "name": "Замена молнии (сумка)",
+      "category": "Сумки • Ремонт",
+      "price": 400
+    },
+    {
+      "code": "clean_jacket",
+      "name": "Чистка кожаной куртки",
+      "category": "Одежда • Чистка",
+      "price": 450
+    },
+    {
+      "code": "paint_jacket_partial",
+      "name": "Покраска куртки (частично)",
+      "category": "Одежда • Покраска",
+      "price": 700
+    },
+    {
+      "code": "paint_jacket_full",
+      "name": "Покраска куртки (полностью)",
+      "category": "Одежда • Покраска",
+      "price": 1200
+    },
+    {
+      "code": "zipper_replace_jacket",
+      "name": "Замена молнии (куртка)",
+      "category": "Одежда • Ремонт",
+      "price": 600
+    }
+  ],
+  "individual_rates": [
+    {
+      "master": "m2",
+      "service": "paint_bag_full",
+      "type": "percent",
+      "value": 0.5
+    },
+    {
+      "master": "m3",
+      "service": "paint_shoes_full",
+      "type": "percent",
+      "value": 0.45
+    }
+  ]
+}
