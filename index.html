@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Atelier — внутреннее приложение</title>
+  <link rel="manifest" href="./manifest.webmanifest" />
+  <link rel="stylesheet" href="./styles.css" />
+  <meta name="theme-color" content="#0a0a0a" />
+</head>
+<body>
+  <div class="container">
+    <div class="topbar">
+      <div class="row">
+        <img src="./icons/icon-192.png" alt="A" width="28" height="28" />
+        <div class="h">ATELIER • внутреннее приложение</div>
+      </div>
+      <div class="role row">
+        <span class="small">Роль:</span>
+        <button id="r-master" class="active">Мастер</button>
+        <button id="r-manager">Менеджер</button>
+        <button id="r-admin">Админ</button>
+      </div>
+      <div class="row">
+        <label class="small">Мастер:</label>
+        <select id="master-select"></select>
+      </div>
+    </div>
+
+    <div id="screen-master">
+      <div class="card">
+        <div class="row" style="justify-content:space-between">
+          <div class="h">Мои заказы</div>
+          <span class="pill" id="my-percent">Твой процент: —</span>
+        </div>
+        <div class="small">Видишь только свои заказы, цену услуги и свою сумму. Данные — локальные (демо).</div>
+      </div>
+      <div id="orders" class="grid cols-2"></div>
+    </div>
+
+    <div id="screen-manager" class="hidden">
+      <div class="grid cols-4">
+        <div class="card"><div class="h">Назначен</div><div id="col-assigned"></div></div>
+        <div class="card"><div class="h">Взято</div><div id="col-taken"></div></div>
+        <div class="card"><div class="h">В работе</div><div id="col-inprogress"></div></div>
+        <div class="card"><div class="h">Готово</div><div id="col-ready"></div></div>
+      </div>
+      <div class="card" style="margin-top:16px">
+        <div class="h">Прайс услуг (демо)</div>
+        <table style="width:100%;border-collapse:collapse" id="services-table">
+        </table>
+      </div>
+    </div>
+
+    <div id="screen-admin" class="hidden">
+      <div class="card">
+        <div class="h">Отчёты (демо)</div>
+        <div class="small">В полной версии здесь будут оборот, выплаты и экспорт.</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
